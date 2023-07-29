@@ -1,0 +1,27 @@
+header {
+    background-color: var(--cor-de-fundo-primaria);
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo__nav {
+    color: var(--cor-principal);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.div__navegacao {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header .div__navegacao li a {
+    padding: 15px;
+    color: var(--cor-principal);
+    font-size: 16px;
+    text-decoration: none;
+}
