@@ -1,16 +1,13 @@
 main {
-    background-color: var(--cor-de-fundo-secundaria);
     color: var(--cor-neutra);
-    border: 1px solid var(--cor-de-fundo-secundaria);
 }
 
 .sobre-mim {
+    background-color: var(--cor-de-fundo-secundaria);
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 50px 60px;
-    margin-top: 10px;
+    padding: 100px 160px;
 }
 
 .sobre-mim__eu {
@@ -30,14 +27,17 @@ main {
 .sobre-mim__titulo {
     color: var(--cor-principal);
     font-size: 32px;
-    font-weight: 600;
+    font-weight: var(--tamanho-fonte4);
+    padding-bottom: 6px;
+    font-family: var(--fonte-secundaria);
 }
 
 .sobre-mim__subtitulo {
-    font-weight: 500;
+    font-weight: var(--tamanho-fonte3);
     font-size: 22px;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
 }
 
 .sobre-mim__paragrafo {

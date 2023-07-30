@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Karoline Vargas::karol.v.0570@gmail.com">
+    <meta name="keywords" content="Karoline Vargas, web site, projeto html, curriculo html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1 class="titulo__nav">Developer</h1>
         <nav class="navegacao">
             <ul class="div__navegacao">
@@ -34,7 +37,7 @@
                 <img src="assets/instagram.svg" class="home__imagem" alt="Logo do Instagram">
             </a>
             <a href="https://github.com/kvargazs">
-                <img src="assets/github.svg" class="home__imagem" alt="Logo do GitHub">
+                <img src="assets/github1.svg" class="home__imagem" alt="Logo do GitHub">
             </a>
         </div>
         <div class="div__home">
@@ -46,8 +49,8 @@
         </div>
         <img src="assets/computador.png" class="computador" alt="Imagem de um notebook, com o simbolo <\>">
     </section>
-    <main class="sobre-mim" id="sobre">
-        <section aria-label="Seção sobre mim" class="sobre-mim">
+    <main>
+        <section aria-label="Seção sobre mim" class="sobre-mim" id="sobre">
             <img src="assets/minha-foto.png" alt="Foto de Karoline" class="sobre-mim__eu animacao-section-eu">
             <div class="sobre-mim__conteudo animacao-section">
                 <div class="sobre-mim__texto">
@@ -56,7 +59,7 @@
                     <p class="sobre-mim__paragrafo">Olá, me chamo Karol!<br>
                         Com uma base sólida de conhecimento teórico e prático, estou trilhando um caminho promissor na programação. Tenho me dedicado a dominar diversas linguagens e frameworks, tais como Java, JavaScript, NodeJs, Git, React e HTML/CSS. Além de habilidades técnicas, possuo excelente comunicação e trabalho bem em equipe. Em suma, sou uma aprendiz determinada, apaixonada por programação e ansiosa para enfrentar desafios cada vez maiores.<br>
                         Sou uma mulher que adora a diversidade da vida. Me considero uma amante de jogos, esportes e o mundo da música é uma fonte inesgotável de inspiração e expressão para mim.<br>
-                        Tenho 18 anos e estou cursando o terceiro ano do Ensino Médio na escola Fundação Bradesco, com foco na área de qualificação, que inclui conhecimentos em IOT, programação back-end e front-end, marketing digital, inovação e startups, prazer.
+                        Tenho 18 anos e estou cursando o terceiro ano do Ensino Médio Técnico na escola Fundação Bradesco, que inclui conhecimentos em IOT, programação back-end e front-end, marketing digital, inovação e startups, prazer.
                     </p>
                 </div>
                 <div class="sobre-mim__infos">
@@ -71,7 +74,39 @@
                 </div>
             </div>
         </section>
+        <section id="skills" class="minhas_skills">
+            <h1 class="skills__titulo">Skills</h1>
+            <div class="skills__div">
+                <h2 class="skills__subtitulo">Hard skills</h2>
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/html.svg" alt="Logo HTML"><p class="skills__paragrafos"><span>HTML5</span>É uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.</p></div>
+                        <div class="swiper-slide"><img src="assets/css.svg" alt="Logo CSS"><p class="skills__paragrafos"><span>CSS3</span>É uma linguagem de estilo usada para definir a aparência e o layout de elementos HTML em uma página da web.</p></div>
+                        <div class="swiper-slide"><img src="assets/js.svg" alt="Logo JS"><p class="skills__paragrafos"><span>JavaScript</span>É uma linguagem de programação que permite adicionar interatividade e dinamismo a uma página da web.</p></div>
+                        <div class="swiper-slide"><img src="assets/nodejs.svg" alt="Logo Node.JS"><p class="skills__paragrafos"><span>Node.JS</span>É uma plataforma de desenvolvimento de código aberto que permite a execução de JavaScript em servidor.</p></div>
+                        <div class="swiper-slide"><img src="assets/react.svg" alt="Logo React"><p class="skills__paragrafos"><span>React</span>Uma biblioteca JavaScript de código aberto. É utilizada no desenvolvimento de interfaces de usuário para construir componentes de interação.</p></div>
+                        <div class="swiper-slide"><img src="assets/java.svg" alt="Logo Java"><p class="skills__paragrafos"><span>Java</span>Linguagem de programação, conhecida por seus programas que podem ser executados multi-plataformas sem precisar ser recompilados.</p></div>
+                        <div class="swiper-slide"><img src="assets/git.svg" alt="Logo Git"><p class="skills__paragrafos"><span>Git</span>É um sistema de controle de versão distribuído usado para rastrear e gerenciar alterações em um projeto de software.</p></div>
+                        <div class="swiper-slide"><img src="assets/GitHub.svg" alt="Logo GitHub"><p class="skills__paragrafos"><span>GitHub</span>É um serviço para colaboração de projetos que oferece ferramentas para gerenciar códigos e colaborações entre desenvolvedores.</p></div>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <h2 class="skills__subtitulo">Soft Skills</h2>
+                    <div class="skills__imagens">
+                        <div class="skills-imagem__soft"><img src="assets/comunicacao.svg" alt="Balões de conversa"><p class="skills__paragrafos"><span>Comunicação</span>Adoro me conectar com os outros e trocar ideias. Gosto de expressar minhas opiniões com clareza e me interesso por perspectivas diferentes.</p></div>
+                        <div class="skills-imagem__soft"><img src="assets/grupo.svg" alt="Grupo de pessoas"><p class="skills__paragrafos"><span>Trabalho em Grupo</span>Sou aberta à colaboração. Acreditando que juntos somos mais fortes, construindo um ambiente de confiança e apoio mútuo.</p></div>
+                        <div class="skills-imagem__soft"><img src="assets/lider.svg" alt="Imagem representando liderança"><p class="skills__paragrafos"><span>Liderança</span>Com empatia, escuto ideias e crio um ambiente de confiança. Acredito que uma liderança autêntica gera resultados excepcionais.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
 </html>

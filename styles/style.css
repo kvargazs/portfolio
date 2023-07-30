@@ -3,18 +3,21 @@
 @import url(header.css);
 @import url(home.css);
 @import url(sobre.css);
+@import url(skills.css);
 
 :root {
     --fonte-principal: "Poppins";
     --fonte-secundaria: "Montserrat";
     --tamanho-fonte1: 300;
-    --tamanho-fonte2: 500;
+    --tamanho-fonte2: 400;
     --tamanho-fonte3: 500;
-    --tamanho-fonte4: 700;
+    --tamanho-fonte4: 600;
     --cor-de-fundo-primaria: #111;
     --cor-de-fundo-secundaria: #222;
-    --sombra-computador: box-shadow: 8px 8px 0px 0px #E76F00;
+    --cor-de-fundo-terciaria: #333;
+    --cor-neutra: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --cor-principal: #8C52FF;
+    --cor-principal-escura: #5829b4;
     --cor-secundaria: #E76F00;
     --cor-neutra: #fff;
 }
@@ -29,5 +32,24 @@
 body {
     margin: auto;
     background-color: var(--cor-de-fundo-primaria);
+    scrollbar-color: var(--cor-neutra) var(--cor-de-fundo-terciaria);
 }
+
+/*Estilizando a barra de rolagem para navegadores baseados em Webkit (ex: Chrome, Safari)*/
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-de-fundo-terciaria); /*Cor de fundo da área da barra de rolagem */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-neutra); /* Cor do indicador da barra de rolagem */
+    border-radius: 10px;
+}
+
+
 
