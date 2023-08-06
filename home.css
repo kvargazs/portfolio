@@ -1,0 +1,97 @@
+.home {
+    animation: escrever .7s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px 150px 100px;
+    background-color: var(--cor-de-fundo-primaria);
+}
+
+.home__imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.home__imagem {
+    transition: transform .4s;
+}
+
+.home__imagem:hover {
+    transform: scale(1.5);
+}
+
+.div__home {
+    margin-left: 130px;
+}
+
+.home__apresentacao {
+    color: var(--cor-neutra);
+    font-size: 16px;
+    margin: 0;
+    font-weight: var(--tamanho-fonte1);
+}
+
+.home__meu-nome {
+    font-family: var(--fonte-secundaria);
+    font-size: 40px;
+    font-weight: var(--tamanho-fonte4);
+    color: var(--cor-principal);
+    margin: 0 0 8px;
+}
+
+.home__profissao {
+    font-family: var(--fonte-secundaria);
+    font-weight: var(--tamanho-fonte4);
+    font-size: 23px;
+    color: var(--cor-secundaria);
+    margin: 5px 0 60px;
+}
+
+.home__profissao::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscando .80s infinite;
+    
+}
+
+.curriculo__download {
+    color: var(--cor-neutra);
+    padding: 18px 26px;
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    font-weight: var(--tamanho-fonte3);
+    text-decoration: none;
+    transition: background-color .4s;
+}
+
+.curriculo__download:hover{
+    background-color: var(--cor-principal-escura);
+}
+
+.computador {
+    width: 400px;
+    height: 550px;
+    margin: 0 0 0 150px;
+    cursor: pointer;
+}
+
+@keyframes escrever {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes piscando {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
