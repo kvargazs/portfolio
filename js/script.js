@@ -34,32 +34,78 @@ function animacaoTexto() {
 }
 
 function animacaoImagem() {
-    var animacaoSection = document.querySelector('.animacao-section-eu');
-    if (isElementInViewport(animacaoSection)) {
-        animacaoSection.classList.add('animacao-visivel-eu');
+    var animacaoSectionFormacao = document.querySelector('.animacao-section-eu');
+    if (isElementInViewport(animacaoSectionFormacao)) {
+        animacaoSectionFormacao.classList.add('animacao-visivel-eu');
     }
 }
 
-function animacaoHeader() {
-    const header = document.getElementById("header");
-    const scrollY = window.scrollY;
-    const altura = 1; //Definir uma altura limite (por exemplo, 1px) para ativar a mudança de cor
-
-    //Verificar se o scroll passou da altura limite
-    if (scrollY > altura) {
-        header.classList.add("header-scrolled"); // Adicionar a classe CSS para alterar a cor
-    } else {
-        header.classList.remove("header-scrolled"); // Remover a classe CSS caso esteja antes da altura limite
+//FUNÇÃO PARA FUNCIONAR A ANIMAÇÃO QUANDO VISÍVEL
+function animacaoTextoFormacao() {
+    var animacaoSectionFormacao = document.querySelector('.animacao-section-formacao');
+    if (isElementInViewport(animacaoSectionFormacao)) {
+        animacaoSectionFormacao.classList.add('animacao-visivel-formacao');
     }
-};
+}
 
-//Adiciona um listener de scroll para verificar quando a seção está visível
+function animacaoImagemFormacao() {
+    var animacaoSection = document.querySelector('.animacao-section-livro');
+    if (isElementInViewport(animacaoSection)) {
+        animacaoSection.classList.add('animacao-visivel-livro');
+    }
+}
+
+//FUNÇÃO NAVEGAÇÃO DO USUARIO
+function verificarSeccaoVisivel() {
+    const seccoes = document.querySelectorAll('section');
+    for (const seccao of seccoes) {
+        const bounding = seccao.getBoundingClientRect();
+        if (bounding.top >= 0 && bounding.top <= window.innerHeight) {
+            // Remove a classe ativo de todos os links e adiciona ao link correspondente à seção visível
+            const links = document.querySelectorAll('.div__navegacao li a');
+            for (const link of links) {
+                link.classList.remove('ativo');
+            }
+            const linkAtivo = document.querySelector(`.div__navegacao li a[href="#${seccao.id}"]`);
+            if (linkAtivo) {
+                linkAtivo.classList.add('ativo');
+            }
+            break;
+        }
+    }
+}
+
+//FUNÇÃO PARA SOMBRA AO ROLAR A TELA
+function atualizarSombraMenu() {
+    const menu = document.querySelector('header');
+    const scrollTop = window.scrollY;
+    const alturaRolagemParaSombra = 1;
+    if (scrollTop > alturaRolagemParaSombra) {
+        menu.classList.add('navegacao-com-sombra');
+    } else {
+        menu.classList.remove('navegacao-com-sombra');
+    }
+}
+
+
+
+window.addEventListener('scroll', atualizarSombraMenu);
+
+//Evento de rolagem que chama a função verificarSeccaoVisivel
+window.addEventListener('scroll', verificarSeccaoVisivel);
+verificarSeccaoVisivel(); //Executa a função quando a página é carregada
+
 window.addEventListener('scroll', animacaoImagem);
 window.addEventListener('scroll', animacaoTexto);
+window.addEventListener('scroll', animacaoImagemFormacao);
+window.addEventListener('scroll', animacaoTextoFormacao);
 window.addEventListener('scroll', animacaoHeader);
 
 //Verifica a animação assim que a página é carregada
 animacaoImagem();
 animacaoTexto();
 animacaoHeader();
+setMenuLinkAtivo();
+animacaoTextoFormacao();
+animacaoImagemFormacao();
 

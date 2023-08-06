@@ -5,7 +5,8 @@
     <meta name="keywords" content="Karoline Vargas, web site, projeto html, curriculo html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <title>Karol-Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -16,15 +17,15 @@
 </head>
 <body>
     <header id="header">
-        <h1 class="titulo__nav">Developer</h1>
+        <img class="titulo__nav" src="assets/icon.svg">
         <nav class="navegacao">
             <ul class="div__navegacao">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#">&ensp;&thinsp;Home&thinsp;&ensp;</a></li>
+                <li><a href="#sobre">&ensp;&thinsp;Sobre mim&thinsp;&ensp;</a></li>
+                <li><a href="#skills">&ensp;&thinsp;Habilidades&thinsp;&ensp;</a></li>
+                <li><a href="#projetos">&ensp;&thinsp;Projetos&thinsp;&ensp;</a></li>
+                <li><a href="#formacao">&ensp;&thinsp;Formação&thinsp;&ensp;</a></li>
+                <li><a href="#contato">&ensp;&thinsp;Contato&thinsp;&ensp;</a></li>
             </ul>
         </nav>
     </header>
@@ -37,12 +38,12 @@
                 <img src="assets/instagram.svg" class="home__imagem" alt="Logo do Instagram">
             </a>
             <a href="https://github.com/kvargazs">
-                <img src="assets/github1.svg" class="home__imagem" alt="Logo do GitHub">
+                <img src="assets/github.svg" class="home__imagem" alt="Logo do GitHub">
             </a>
         </div>
         <div class="div__home">
             <h3 class="home__apresentacao">Olá, me chamo</h3>
-            <h2 class="home__meu-nome">Karoline Vargas</h2>
+            <h2 class="home__meu-nome">Karoline Vargas </h2>
             <h3 class="home__apresentacao">e sou</h3>
             <h2 class="home__profissao">Desenvolvedora Full Stack</h2>
             <a class="curriculo__download" href="pdf/currículo-karoline-vargas.pdf" download="currículo-karoline-vargas.pdf">DOWNLOAD CV</a>
@@ -56,7 +57,7 @@
                 <div class="sobre-mim__texto">
                     <h1 class="sobre-mim__titulo">Sobre mim</h1>
                     <h2 class="sobre-mim__subtitulo">Eu sou estudante Full Stack</h2>
-                    <p class="sobre-mim__paragrafo">Olá, me chamo Karol!<br>
+                    <p class="sobre-mim__paragrafo">Olá, me chamo Karoline Vargas Ferreira!<br>
                         Com uma base sólida de conhecimento teórico e prático, estou trilhando um caminho promissor na programação. Tenho me dedicado a dominar diversas linguagens e frameworks, tais como Java, JavaScript, NodeJs, Git, React e HTML/CSS. Além de habilidades técnicas, possuo excelente comunicação e trabalho bem em equipe. Em suma, sou uma aprendiz determinada, apaixonada por programação e ansiosa para enfrentar desafios cada vez maiores.<br>
                         Sou uma mulher que adora a diversidade da vida. Me considero uma amante de jogos, esportes e o mundo da música é uma fonte inesgotável de inspiração e expressão para mim.<br>
                         Tenho 18 anos e estou cursando o terceiro ano do Ensino Médio Técnico na escola Fundação Bradesco, que inclui conhecimentos em IOT, programação back-end e front-end, marketing digital, inovação e startups, prazer.
@@ -74,28 +75,26 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="minhas_skills">
-            <h1 class="skills__titulo">Skills</h1>
+        <section class="minhas_skills" id="skills">
+            <h1 class="skills__titulo">Habilidades</h1>
             <div class="skills__div">
                 <h2 class="skills__subtitulo">Hard skills</h2>
                 <div class="swiper">
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/html.svg" alt="Logo HTML"><p class="skills__paragrafos"><span>HTML5</span>É uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.</p></div>
-                        <div class="swiper-slide"><img src="assets/css.svg" alt="Logo CSS"><p class="skills__paragrafos"><span>CSS3</span>É uma linguagem de estilo usada para definir a aparência e o layout de elementos HTML em uma página da web.</p></div>
-                        <div class="swiper-slide"><img src="assets/js.svg" alt="Logo JS"><p class="skills__paragrafos"><span>JavaScript</span>É uma linguagem de programação que permite adicionar interatividade e dinamismo a uma página da web.</p></div>
-                        <div class="swiper-slide"><img src="assets/nodejs.svg" alt="Logo Node.JS"><p class="skills__paragrafos"><span>Node.JS</span>É uma plataforma de desenvolvimento de código aberto que permite a execução de JavaScript em servidor.</p></div>
-                        <div class="swiper-slide"><img src="assets/react.svg" alt="Logo React"><p class="skills__paragrafos"><span>React</span>Uma biblioteca JavaScript de código aberto. É utilizada no desenvolvimento de interfaces de usuário para construir componentes de interação.</p></div>
-                        <div class="swiper-slide"><img src="assets/java.svg" alt="Logo Java"><p class="skills__paragrafos"><span>Java</span>Linguagem de programação, conhecida por seus programas que podem ser executados multi-plataformas sem precisar ser recompilados.</p></div>
-                        <div class="swiper-slide"><img src="assets/git.svg" alt="Logo Git"><p class="skills__paragrafos"><span>Git</span>É um sistema de controle de versão distribuído usado para rastrear e gerenciar alterações em um projeto de software.</p></div>
-                        <div class="swiper-slide"><img src="assets/GitHub.svg" alt="Logo GitHub"><p class="skills__paragrafos"><span>GitHub</span>É um serviço para colaboração de projetos que oferece ferramentas para gerenciar códigos e colaborações entre desenvolvedores.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/html.svg" alt="Logo HTML"><p class="skills__paragrafos"><span>HTML5</span>É uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/css.svg" alt="Logo CSS"><p class="skills__paragrafos"><span>CSS3</span>É uma linguagem de estilo usada para definir a aparência e o layout de elementos HTML em uma página da web.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/js.svg" alt="Logo JS"><p class="skills__paragrafos"><span>JavaScript</span>É uma linguagem de programação que permite adicionar interatividade e dinamismo a uma página da web.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/nodejs.svg" alt="Logo Node.JS"><p class="skills__paragrafos"><span>Node.JS</span>É uma plataforma de desenvolvimento de código aberto que permite a execução de JavaScript em servidor.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/react.svg" alt="Logo React"><p class="skills__paragrafos"><span>React</span>Uma biblioteca JavaScript. Utilizada no desenvolvimento de interfaces de usuário.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/java.svg" alt="Logo Java"><p class="skills__paragrafos"><span>Java</span>Linguagem, conhecida por ser executado em multi-plataformas sem precisar ser recompilado.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/git.svg" alt="Logo Git"><p class="skills__paragrafos"><span>Git</span>É um sistema de controle de versão distribuído usado para rastrear e gerenciar alterações em um projeto de software.</p></div>
+                        <div class="swiper-slide slide"><img class="imagem__habilidade" src="assets/GitHub.svg" alt="Logo GitHub"><p class="skills__paragrafos"><span>GitHub</span>É um serviço para colaboração de projetos que oferece ferramentas para gerenciar códigos.</p></div>
                     </div>
                 </div>
                 </div>
                 <div>
-                    <h2 class="skills__subtitulo">Soft Skills</h2>
+                    <h2 class="skills__subtitulo">Soft skills</h2>
                     <div class="skills__imagens">
                         <div class="skills-imagem"><img src="assets/comunicacao.svg" alt="Balões de conversa"><p class="skills__paragrafos"><span>Comunicação</span>Adoro me conectar com os outros e trocar ideias. Gosto de expressar minhas opiniões com clareza e me interesso por perspectivas diferentes.</p></div>
                         <div class="skills-imagem"><img src="assets/grupo.svg" alt="Grupo de pessoas"><p class="skills__paragrafos"><span>Trabalho em Grupo</span>Sou aberta à colaboração. Acreditando que juntos somos mais fortes, construindo um ambiente de confiança e apoio mútuo.</p></div>
@@ -104,9 +103,159 @@
                 </div>
             </div>
         </section>
+        <section class="meus_projetos" id="projetos">
+            <h1 class="projetos__titulo">Projetos</h1>
+            <p class="projetos__texto">Alguns trabalhos recentes...</p>
+            <div class="swiper2">
+                <div class="swiper-pagination2"></div>
+                <div class="swiper-wrapper carrossel__container">
+                    <div class="swiper-slide projeto__container">
+                        <div class="video-overlay">
+                            <video autoplay muted loop>
+                                <source class="video-projeto" src="assets/videos/video-calculadora.mp4" type="video/mp4">
+                                Seu navegador não suporta a reprodução de vídeos.
+                            </video>
+                            <div class="github-icon">
+                                <a href="https://github.com/kvargazs/calculadora" target="_blank" title="Repositório no Github">
+                                <img class="icon-github" src="assets/github-icon.svg"></a>
+                            </div>
+                        </div>
+                        <p class="projetos__paragrafos">
+                            <span>Calculadora</span>
+                            Projeto de uma calculadora, feita com HTML, CSS e JavaScript. Para acessar o repositório, basta clicar no icon do GitHub do vídeo!</p>
+                    </div>
+                    <div class="swiper-slide projeto__container">
+                        <div class="video-overlay">
+                            <video autoplay muted loop>
+                                <source class="video-projeto" src="assets/videos/video-livraria.mp4" type="video/mp4">
+                                Seu navegador não suporta a reprodução de vídeos.
+                            </video>
+                            <div class="github-icon">
+                                <a href="https://github.com/kvargazs/MangaVerse" target="_blank" title="Repositório no Github">
+                                <img class="icon-github" src="assets/github-icon.svg"></a>
+                            </div>
+                        </div>
+                        <p class="projetos__paragrafos">
+                            <span>Mangá Verse</span>
+                            Projeto de uma livraria de mangás, feita com HTML, CSS e JavaScript --EM ANDAMENTO--. Para acessar o repositório, basta clicar no icon do GitHub do vídeo!</p>
+                    </div>
+                    <div class="swiper-slide projeto__container">
+                        <div class="video-overlay">
+                            <video autoplay muted loop>
+                                <source class="video-projeto" src="assets/videos/video-mochila.mp4" type="video/mp4">
+                                Seu navegador não suporta a reprodução de vídeos.
+                            </video>
+                            <div class="github-icon">
+                                <a href="https://github.com/kvargazs/MochilaDeViagem" target="_blank" title="Repositório no Github">
+                                <img class="icon-github" src="assets/github-icon.svg"></a>
+                            </div>
+                        </div>
+                        <p class="projetos__paragrafos">
+                            <span>Mochila de viagem</span>
+                            Projeto para simular uma mochila, usada como uma lista de coisas a serem levadas em uma viagem, feita com HTML, CSS e JavaScript. Para acessar o repositório, basta clicar no icon do GitHub do vídeo!</p>
+                    </div>
+                    <div class="swiper-slide projeto__container">
+                        <div class="video-overlay">
+                            <video autoplay muted loop>
+                                <source class="video-projeto" src="assets/videos/video-bateria.mp4" type="video/mp4">
+                                Seu navegador não suporta a reprodução de vídeos.
+                            </video>
+                            <div class="github-icon">
+                                <a href="https://github.com/kvargazs/BateriaDigital" target="_blank" title="Repositório no Github">
+                                <img class="icon-github" src="assets/github-icon.svg"></a>
+                            </div>
+                        </div>
+                        <p class="projetos__paragrafos">
+                            <span>Bateria digital</span>
+                            Projeto de uma bateria digital, usado par simular sons de uma bateria de verdade, feita com HTML, CSS e JavaScript. Para acessar o repositório, basta clicar no icon do GitHub do vídeo!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="minha__formacao" id="formacao">
+            <h1 class="formacao__titulo">Formacão</h1>
+            <h2 class="formacao__subtitulo">Minhas formações, cursos e certificados</h2>
+            <div class="formacao__div">
+                <img src="assets/formacao.png" alt="Foto de Karoline" class="formacao__imagem animacao-section-livro">
+                <div class="formacao__texto animacao-section-formacao">
+                    <p>
+                        <span>Ensino médio técnico - <a href="https://fundacao.bradesco" class="formacao__link">Fundação Bradesco</a> - Gravataí/RS</span><br>
+                        <ul>
+                            <li>Desenvolvimento de lógica de programação.</li>
+                            <li>Linguagens: Portugol, Java, JavaScript, C++, HTML e CSS.</li>
+                            <li>IOT (Internet das coisas) e robótica;</li>
+                            <li>Marketing, inovação e Startups.</li>
+                        </ul><br>
+                        <span><a href="https://institutocaldeira.org.br/programas/nova-geracao/" class="formacao__link">Nova Geração</a> Instituto Caldeira + <a href="https://www.alura.com.br" class="formacao__link">Alura</a> - Trilha de Programação</span><br>
+                        <ul>
+                            <li>Linguagens: Java, JavaScript, HTML e CSS.</li>
+                            <li>Git e GitHub: repositório, commit e versões.</li>
+                        </ul><br>
+                        <span>Meus certificados Alura <a href="https://cursos.alura.com.br/user/kvargazs/fullCertificate/7ecbade36ea69d51630bcab52641abb6" class="formacao__link">AQUI!</a></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contato" id="contato">
+            <h1 class="contato__titulo">Contato</h1>
+            <h2 class="contato__subtitulo">Venha se conectar comigo!</h2>
+            <div class="contato__container">
+                <div class="contatos__div">
+                    <a class="contato__link" href="https://www.linkedin.com/in/karoline-vargas-ferreira-76a60721b/">
+                        <img src="assets/linkedin.svg" class="contato__imagem">
+                    </a>
+                </div>
+                <div class="contatos__div">
+                    <a class="contato__link" href="https://www.linkedin.com/in/karoline-vargas-ferreira-76a60721b/">
+                        <img src="assets/instagram.svg" class="contato__imagem">
+                    </a>
+                </div>
+                <div class="contatos__div">
+                    <a class="contato__link" href="https://www.linkedin.com/in/karoline-vargas-ferreira-76a60721b/">
+                        <img src="assets/github.svg" class="contato__imagem">
+                    </a>
+                </div>
+            </div>
+                <p class="contato__mensagem">Vamos conversar, me mande mensagem por email clicando no link abaixo!</p>
+                <a class="contato__email" href="mailto:karol.v.0570@gmail.com">Enviar email</a>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__div">
+            <div class="footer_container">
+                <div>
+                    <h1 class="footer__titulo">Karoline</h1>
+                    <p class="footer__subtitulo">Full Stack Developer</p>
+                </div>
+                <div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sobre" class="footer__link">Sobre mim</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Habilidades</a>
+                        </li>
+                        <li>
+                            <a href="#projetos" class="footer__link">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#formacao" class="footer__link">Formação</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__sociais">
+                    <a href="pdf/currículo-karoline-vargas.pdf"><img src="assets/curriculo.svg" class="footer__social"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copy">©2023 por Karoline Vargas.</p>
+    </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/carrossel.js"></script>
+    <script src="js/projetos.js"></script>
 </body>
 </html>

@@ -11,3 +11,18 @@ const swiper = new Swiper('.swiper', {
         type: 'bullets',
     },
 });
+
+
+const swiper2 = new Swiper('.swiper2', {
+    spaceBetween: 100,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 3300,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination2',
+        type: 'bullets',
+    },
+});

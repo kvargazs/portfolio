@@ -1,0 +1,82 @@
+.meus_projetos {
+    padding: 80px 100px;
+    background-color: var(--cor-de-fundo-secundaria);
+    overflow-x: hidden;
+}
+
+.projetos__titulo {
+    padding-bottom: 10px;
+    font-family: var(--fonte-secundaria);
+    font-weight: var(--tamanho-fonte4);
+    font-size: 32px;
+    color: var(--cor-principal);
+    text-align: center;
+}
+
+.projetos__texto {
+    font-size: 16px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.swiper-pagination2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 7px;
+}
+
+.projeto__container {
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-de-fundo-secundaria);
+}
+
+.video-overlay {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 100%;
+} 
+
+.video-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.github-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-overlay:hover .github-icon {
+    opacity: 1;
+}
+
+.projetos__paragrafos {
+    padding-right: 130px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+

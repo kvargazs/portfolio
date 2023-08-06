@@ -1,0 +1,99 @@
+.minha__formacao {
+    padding: 80px 100px;
+}
+
+.formacao__titulo {
+    padding-bottom: 10px;
+    font-family: var(--fonte-secundaria);
+    font-weight: var(--tamanho-fonte4);
+    font-size: 32px;
+    color: var(--cor-principal);
+    text-align: center;
+}
+
+.formacao__subtitulo {
+    font-size: 16px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.formacao__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao__imagem {
+    width: 450px;
+    cursor: pointer;
+    margin: 50px 100px 50px 0;
+}
+
+.formacao__link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: var(--tamanho-fonte4);
+    position: relative;
+    display: inline-block;
+}
+
+.formacao__link::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--cor-secundaria);
+    transition: width 0.5s ease-in-out;
+}
+
+.formacao__link:hover::before {
+    width: 100%;
+}
+
+.formacao__texto ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.formacao__texto ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.formacao__texto ul li::before {
+    content: "▹";
+    position: absolute;
+    left: -10px;
+    top: 6px;
+    color: var(--cor-principal);
+    line-height: 14px;
+}
+
+
+/* Estilos da animação quando estiver invisível */
+.animacao-section-formacao {
+    opacity: 0;
+    transition: .7s;
+    transform: translate3d(0, 90px, 0);
+}
+
+/* Estilos da animação quando estiver visível */
+.animacao-visivel-formacao {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animacao-section-livro {
+    opacity: 0;
+    transition: .7s;
+    transform: translate3d(0, -90px, 0);
+}
+
+/* Estilos da animação quando estiver visível */
+.animacao-visivel-livro {
+    opacity: 1;
+    transform: translateX(0);
+}
